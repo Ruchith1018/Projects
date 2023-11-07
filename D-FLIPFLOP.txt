@@ -1,0 +1,12 @@
+
+
+CHIP PROJECTQ2 {
+ IN in;
+    OUT Q0;
+
+    PARTS:
+DFF(in=in,out=Q3);
+DFF(in=Q3,out=Q2);
+DFF(in=Q2,out=Q1);
+DFF(in=Q1,out=Q0);         
+}
