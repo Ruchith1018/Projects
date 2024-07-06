@@ -1,0 +1,97 @@
+Introduction:
+=============
+1) What is Hand writing recognition?
+
+Handwriting recognition is the ability of a computer or device to take as 
+input handwriting from sources such as printed physical documents, pictures and 
+other devices, or to use handwriting as a direct input to a touchscreen and then 
+interpret this as text.
+
+
+2)what are the different ways to approach handwriting letter recognition?
+
+Convolutional Neural network.
+Semi Incremental Recognition.
+Incremental Recognition.
+K nearest neighbor.
+Support vector machince.
+decision trees.
+Ensemble method.
+
+In this project we are going to use K nearest neighbor,support vector machines,decision trees.
+
+3) Is there any application or advantages with this?
+
+Applications:
+-------------
+Applications of handwriting letter recognition are numerous: 1)reading postal addresses, 
+                                                             2)bank check amounts, 
+										 3)and forms
+Advantages:
+----------- 
+Handwriting recognition helps to transform the writings in the papers to a text document 
+format which can also be said as readable electronic format. 
+By this way, historical facts can be stored, reviewed and shared easily 
+too many people. Lastly, the advantage is textual studies.
+
+DATA SET:
+=========
+* We have taken a data set called handwriting letter recognition
+* This data set is taken from the kaggle.
+* Our data set contains 20000 rows and 17 columns.
+* The 16 columns contains Properties of the letter and other 1 column is Output letter
+* The columns are letter	xbox 	ybox 	width 	height	onpix 	xbar 	
+                              ybar 	x2bar	y2bar 	xybar 	x2ybar	xy2bar	
+                              xedge 	xedgey	yedge 	yedgex
+
+1. lettr capital letter (26 values from A to Z)
+2. x-box horizontal position of box (integer)
+3. y-box vertical position of box (integer)
+4. width width of box (integer)
+5. high height of box (integer)
+6. onpix total # on pixels (integer)
+7. x-bar mean x of on pixels in box (integer)
+8. y-bar mean y of on pixels in box (integer)
+9. x2bar mean x variance (integer)
+10. y2bar mean y variance (integer)
+11. xybar mean x y correlation (integer)
+12. x2ybr mean of x * x * y (integer)
+13. xy2br mean of x * y * y (integer)
+14. x-ege mean edge count left to right (integer)
+15. xegvy correlation of x-ege with y (integer)
+16. y-ege mean edge count bottom to top (integer)
+17. yegvx correlation of y-ege with x (integer)
+
+System Model:
+=============
+* The given data set is divided into train and test test data set.
+* The first block represents the training data...
+* The data is trained....represented in second block.
+* Using the appropriate Algorithm the test data is given as input...represented in 3 4 5 blocks
+* After all...the algorithm predicts the output for the test data
+* This all process represents a Model.
+
+We are using 3 Algorithms for making a model:
+1) K-nearest Neighbor:
+-------------------------
+* The data is divided not only in KNN, but also in SVN and Decision tree.
+* Using the KNN Classifier taking n neighbors find the predicted for test data
+* From predicted data find Accuracy, Precision, Recall, F1-Score etc.
+* Specifically, four different distance functions, which are Euclidean 
+  distance, cosine similarity measure, correlation, and Chi square, 
+  are used in the k-NN classifier respectively
+
+2) Support Vector Machines:
+===========================
+* Using the SVN Classifier we find the predicted for test data
+* From predicted data find Accuracy, Precision, Recall, F1-Score etc.
+* Specifically, different kernal functions, which are Polynomial,linear,Gaussian
+  Radial Basis Function,Laplaas kernel are used in the SVN classifier respectively.
+
+2) Decision Tree:
+------------------
+* Using the Decision Classifier we find the predicted for test data
+* From predicted data find Accuracy, Precision, Recall, F1-Score etc.
+* Specifically, different criterion functions, which are Entropy and gain
+  are used in the Decision tree classifier respectively.
+

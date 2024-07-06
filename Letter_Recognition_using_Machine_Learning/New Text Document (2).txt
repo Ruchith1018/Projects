@@ -1,0 +1,37 @@
+To perform three algorithms we have to import some libraries:
+
+* Pandas library is used to read the data set file which is in the format csv
+* Numpy library is used to replacing the nan values and emply values in the data set
+* train_test_split library is used to split the data set in test and train
+* knn svc decision tree classifier used to implement the respective algorithms
+* confusion matrix :A confusion matrix is a table that is used to define the performance 
+                    of a classification algorithm.
+* with the confusion matrix we can calculate accuracy,precision, recall,f1_score.
+*Accuracy is defined as the ratio of correctly predicted examples by the total examples.
+*Precision is a metric that tells us about the quality of positive predictions.
+* Recall in this context is defined as the number of true positives divided 
+  by the total number of elements that actually belong to the positive class.
+*F1 score is defined as the harmonic mean between precision and recall.
+KNN-Algorithm:
+==============
+*using test train library the data is divided into test and train data sets in the ratio 8:2
+*after,the data is preprocessed and fitted into new train and test
+*Using knn classifier taking n_neighbors=5 create a model named knn.
+*fitting thr data into the model.
+*after fitting our model is ready we can predict the output based on the input given.
+
+SVM:
+==============
+* Svm is same as KNN but insted of KNN classifier we use SVC classfier
+* SVC classifier divides the data into categories witha linear vector,parabolic vector.
+* And from the confusion matrix we can obtain accuracy.
+
+Decision Tree:
+==============
+* Decision is also same as Knn but instead of knn classifier we use decision tree classifier.
+* Decision tree classifier divides the data in the criterion of entropy and gain.
+* And from the confusion matrix we can obtain accuracy.
+
+From the above three algorithms which has high accuracy it is preffered.
+
+using classification report library it directly prits the accuracy,precision,recall score,f1 score
